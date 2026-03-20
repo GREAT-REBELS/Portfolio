@@ -9,25 +9,39 @@
   <script>
     tailwind.config = { darkMode: 'class' }
   </script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 pt-28">
 
   <!-- Header -->
   <header id="mainHeader" class="bg-emerald-600 dark:bg-emerald-800 text-white py-6 text-center fixed top-0 w-full z-50 shadow-md">
-    <h1 class="text-3xl font-bold">Prasanna Kumar R</h1>
-    <p class="text-lg">.NET Developer | ASP.NET | Angular | SQL</p>
-    <button id="themeToggle"
-      class="absolute top-4 right-4 px-3 py-2 bg-emerald-700 dark:bg-gray-200 text-white dark:text-gray-900 rounded-lg shadow hover:scale-105 transition">
-      🌙
-    </button>
-  </header>
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <div>
+        <h1 class="text-3xl font-bold">Prasanna Kumar R</h1>
+        <p class="text-sm md:text-base">.NET Developer | ASP.NET | Angular | SQL</p>
+      </div>
+      <nav aria-label="Main navigation" class="flex flex-wrap justify-center gap-2 text-sm md:text-base">
+        <a href="#about" class="px-3 py-2 rounded-md hover:bg-emerald-500/80 transition">About</a>
+        <a href="#skills" class="px-3 py-2 rounded-md hover:bg-emerald-500/80 transition">Skills</a>
+        <a href="#projects" class="px-3 py-2 rounded-md hover:bg-emerald-500/80 transition">Projects</a>
+        <a href="#certifications" class="px-3 py-2 rounded-md hover:bg-emerald-500/80 transition">Certifications</a>
+        <a href="#experience" class="px-3 py-2 rounded-md hover:bg-emerald-500/80 transition">Experience</a>
+        <a href="#contact" class="px-3 py-2 rounded-md hover:bg-emerald-500/80 transition">Contact</a>
+      </nav>
+      <button id="themeToggle" aria-label="Toggle dark mode" class="px-3 py-2 bg-emerald-700 dark:bg-gray-200 text-white dark:text-gray-900 rounded-lg shadow hover:scale-105 transition">
+        🌙
+      </button>
+    </div>
+  </div>
+</header>
 
   <!-- About -->
-  <section class="max-w-4xl mx-auto p-6 text-center">
+  <section id="about" class="max-w-4xl mx-auto p-6 text-center">
     <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">About Me</h2>
     <div class="flex flex-col md:flex-row items-center gap-6">
-      <img src="https://wallpapercat.com/w/full/1/c/9/5823616-5120x2880-desktop-hd-boy-programmer-wallpaper.jpg" alt="Prasanna Kumar R" class="mx-auto w-32 h-32 rounded-full border-4 border-emerald-500 mb-4 object-cover">
+      <img src="https://wallpapercat.com/w/full/1/c/9/5823616-5120x2880-desktop-hd-boy-programmer-wallpaper.jpg" alt="Headshot of Prasanna" class="mx-auto w-32 h-32 rounded-full border-4 border-emerald-500 mb-4 object-cover">
     <p class="mb-6 dark:text-gray-200">
       Computer Science Engineer with a passion for developing scalable web applications and solving complex problems.
       Quick learner with strong analytical skills, capable of working independently or in teams. Enthusiastic about innovation and adapting to new technologies.
@@ -40,7 +54,7 @@
   </section>
 
   <!-- Skills -->
-  <section class="max-w-4xl mx-auto p-6">
+  <section id="skills" class="max-w-4xl mx-auto p-6">
     <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">Skills</h2>
     <div class="flex flex-wrap gap-3">
       <span class="bg-emerald-100 dark:bg-emerald-700 px-4 py-2 rounded-full dark:text-white">.NET</span>
@@ -55,26 +69,76 @@
   </section>
 
   <!-- Projects -->
-  <section class="max-w-4xl mx-auto p-6">
+  <section id="projects" class="max-w-4xl mx-auto p-6">
     <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">Projects</h2>
     <div class="grid gap-6 md:grid-cols-2">
-      <div class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border-l-4 border-emerald-500 transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <h3 class="text-xl font-bold dark:text-white">Blog Application using ASP.NET MVC</h3>
-        <p class="dark:text-gray-200">Built with ASP.NET MVC + Web API. Implemented Repository-Service pattern for clean architecture. Features: create, edit, delete blog posts, and categorization.</p>
-      </div>
-      <div class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border-l-4 border-emerald-500 transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <h3 class="text-xl font-bold dark:text-white">Vehicle Management System</h3>
-        <p class="dark:text-gray-200">ASP.NET MVC frontend + Web API backend. Features: vehicle registration, service scheduling, and maintenance tracking.</p>
-      </div>
-      <div class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border-l-4 border-emerald-500 md:col-span-2 transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <h3 class="text-xl font-bold dark:text-white">Food Demand Prediction</h3>
-        <p class="dark:text-gray-200">Developed using Decision Tree algorithms. Forecasted meals based on historical orders, seasonality, and customer preferences. Includes data preprocessing, feature selection, and evaluation for accuracy.</p>
-      </div>
+      <article class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border border-emerald-200 dark:border-emerald-700 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+          <h3 class="text-xl font-bold dark:text-white">Blog Application using ASP.NET MVC</h3>
+          <!-- <span class="text-xs font-semibold uppercase tracking-wide bg-emerald-100 text-emerald-800 dark:bg-emerald-700 dark:text-white px-2 py-1 rounded-full">Production</span> -->
+        </div>
+        <p class="dark:text-gray-200 mb-3">Built with ASP.NET MVC + Web API. Implemented Repository-Service pattern for clean architecture, with CRUD, categories, and role-based access.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">ASP.NET MVC</span>
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">C#</span>
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">SQL</span>
+        </div>
+        <!-- <div class="flex gap-2">
+          <a href="#" class="text-sm font-medium text-emerald-700 dark:text-emerald-300 hover:underline">Demo</a>
+          <a href="#" class="text-sm font-medium text-emerald-700 dark:text-emerald-300 hover:underline">GitHub</a>
+        </div> -->
+      </article>
+      <article class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border border-emerald-200 dark:border-emerald-700 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+          <h3 class="text-xl font-bold dark:text-white">Vehicle Management System</h3>
+          
+        </div>
+        <p class="dark:text-gray-200 mb-3">ASP.NET MVC frontend + Web API backend. Supports vehicle registration, service scheduling, and maintenance tracking with roles.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">ASP.NET Core</span>
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Angular</span>
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Entity Framework</span>
+        </div>
+        
+      </article>
+      <article class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border border-emerald-200 dark:border-emerald-700 md:col-span-2 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+          <h3 class="text-xl font-bold dark:text-white">Food Demand Prediction</h3>
+        </div>
+        <p class="dark:text-gray-200 mb-3">Developed decision tree forecasting model to predict food demand based on historical orders, seasonality, and features. Includes evaluation reports.</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Python</span>
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Pandas</span>
+          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Scikit-learn</span>
+        </div>
+      </article>
     </div>
   </section>
 
+  <!--Education & Certifications-->>
+
+  <section id="certifications" class="max-w-4xl mx-auto p-6">
+  <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">
+    Certifications & Education
+  </h2>
+  <div class="grid gap-4 md:grid-cols-2">
+     <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+      <h3 class="font-bold text-lg dark:text-white">B.E. in Computer Science</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300">R>M.K College of Engineering and Technology · 2020 - 2024</p>
+    </div>
+    
+    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow md:col-span-2">
+      <h3 class="font-bold text-lg dark:text-white">Certifications</h3>
+      <ul class="list-disc list-inside text-gray-700 dark:text-gray-200">
+        <li>Azure AI Fundamentals(AI900)</li>
+        <li>Microsoft Data Fundamentals (DP900)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
   <!-- Experience -->
-  <section class="max-w-4xl mx-auto p-6">
+  <section id="experience" class="max-w-4xl mx-auto p-6">
     <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">Experience</h2>
     <p class="font-bold dark:text-white">.NET Developer @ Tech Mahindra</p>
     <ul class="list-disc pl-6 mt-2 dark:text-gray-200">
@@ -84,7 +148,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="max-w-4xl mx-auto p-6">
+  <section id="contact" class="max-w-4xl mx-auto p-6">
     <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">Contact</h2>
     <div class="space-y-2">
       <a href="mailto:prasannakumar2k3@gmail.com" class="block text-emerald-700 dark:text-emerald-400 hover:underline"><i class="fas fa-envelope fa-2x"></i> Email: prasannakumar2k3@gmail.com</a>
