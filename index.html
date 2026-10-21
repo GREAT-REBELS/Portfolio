@@ -15,12 +15,12 @@
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 pt-28">
 
   <!-- Header -->
-  <header id="mainHeader" class="bg-emerald-600 dark:bg-emerald-800 text-white py-6 text-center fixed top-0 w-full z-50 shadow-md">
+  <header id="mainHeader" class="bg-emerald-600 dark:bg-emerald-800 text-white py-4 md:py-6 text-center fixed top-0 w-full z-50 shadow-md">
     <div class="max-w-5xl mx-auto px-4">
-      <div class="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h1 class="text-3xl font-bold">Prasanna Kumar R</h1>
-          <p class="text-sm md:text-base">Data Engineer | Apache Spark | Airflow | SQL</p>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+        <div class="text-center md:text-left">
+          <h1 class="text-2xl md:text-3xl font-bold">Prasanna Kumar R</h1>
+          <p class="text-xs md:text-base">Data Engineer | Apache Spark | Airflow | SQL</p>
         </div>
         <nav aria-label="Main navigation" class="flex flex-wrap justify-center gap-2 text-sm md:text-base">
           <a href="#about" class="px-3 py-2 rounded-md hover:bg-emerald-500/80 transition">About</a>
@@ -38,30 +38,30 @@
   </header>
 
   <!-- Hero -->
-  <section class="max-w-6xl mx-auto px-6 pt-10 pb-4">
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 md:pt-10 pb-4">
     <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-800 text-white shadow-2xl">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.22),_transparent_30%)]"></div>
-      <div class="relative grid md:grid-cols-[1.4fr_0.8fr] items-center gap-8 px-6 md:px-10 py-10 md:py-14">
+      <div class="relative grid md:grid-cols-[1.4fr_0.8fr] items-center gap-6 md:gap-8 px-5 sm:px-6 md:px-10 py-8 md:py-14">
         <div>
-          <p class="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-emerald-50">
+          <p class="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-3 py-1 text-[10px] sm:text-xs font-medium uppercase tracking-[0.18em] text-emerald-50">
             Data Engineer
           </p>
-          <h2 class="mt-5 text-3xl md:text-5xl font-extrabold leading-tight">
+          <h2 class="mt-5 text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight">
             Building reliable data pipelines for modern banking and enterprise workflows.
           </h2>
-          <p class="mt-4 max-w-xl text-base md:text-lg text-emerald-50/90">
+          <p class="mt-4 max-w-xl text-sm sm:text-base md:text-lg text-emerald-50/90">
             I design, migrate, and troubleshoot ETL systems using Spark, Hive, Airflow, and cloud-native data platforms to keep critical data flowing with accuracy and speed.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#projects" class="inline-block rounded-lg bg-white px-5 py-3 font-semibold text-emerald-700 shadow-lg transition hover:scale-[1.02]">View Projects</a>
-            <a href="#contact" class="inline-block rounded-lg border border-white/40 bg-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/15">Contact Me</a>
+            <a href="#projects" class="inline-block w-full sm:w-auto text-center rounded-lg bg-white px-5 py-3 font-semibold text-emerald-700 shadow-lg transition hover:scale-[1.02]">View Projects</a>
+            <a href="#contact" class="inline-block w-full sm:w-auto text-center rounded-lg border border-white/40 bg-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/15">Contact Me</a>
           </div>
         </div>
 
         <div class="space-y-4">
-          <div class="rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-sm">
-            <div class="text-sm uppercase tracking-[0.2em] text-emerald-100">Core Stack</div>
-            <div class="mt-3 flex flex-wrap gap-2 text-sm font-medium">
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-4 md:p-5 backdrop-blur-sm">
+            <div class="text-xs sm:text-sm uppercase tracking-[0.2em] text-emerald-100">Core Stack</div>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs sm:text-sm font-medium">
               <span class="rounded-full bg-emerald-100/20 px-3 py-1">Spark</span>
               <span class="rounded-full bg-emerald-100/20 px-3 py-1">Iceberg</span>
               <span class="rounded-full bg-emerald-100/20 px-3 py-1">Airflow</span>
@@ -69,7 +69,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-3 gap-3 text-center">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
             <div class="rounded-2xl bg-white/10 p-4 border border-white/15">
               <div class="text-2xl font-bold">2+</div>
               <div class="text-xs text-emerald-100">Years</div>
@@ -89,15 +89,15 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto p-6 text-center">
+  <section id="about" class="max-w-4xl mx-auto p-4 sm:p-6 text-center">
     <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">About Me</h2>
     <div class="flex flex-col md:flex-row items-center gap-6">
       <img src="https://wallpapercat.com/w/full/1/c/9/5823616-5120x2880-desktop-hd-boy-programmer-wallpaper.jpg" alt="Headshot of Prasanna" class="mx-auto w-32 h-32 rounded-full border-4 border-emerald-500 mb-4 object-cover">
-      <p class="mb-6 dark:text-gray-200 text-left md:text-justify">
+      <p class="mb-6 dark:text-gray-200 text-left md:text-justify text-sm sm:text-base">
         Data Engineer with hands-on experience building, migrating, and troubleshooting enterprise ETL pipelines and data warehousing workflows in a banking data environment. Skilled in Apache Spark, Apache Iceberg, Hive HQL, and Apache Airflow, with experience converting legacy Hadoop-based pipelines to modern cloud data platforms. Proficient in SQL, Linux shell scripting, and Kubernetes-based data processing, with a strong track record of diagnosing and resolving production ETL failures through root-cause analysis.
       </p>
     </div>
-    <a href="resume.pdf" target="_blank" download
+    <a href="assests/Prasanna_Kumar_R_Resume.pdf" target="_blank" download
        class="inline-block px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg shadow-md">
       📄 Download Resume
     </a>
@@ -128,19 +128,7 @@
   <section id="projects" class="max-w-4xl mx-auto p-6">
     <h2 class="text-2xl font-semibold border-b-2 border-emerald-500 dark:border-emerald-400 pb-2 mb-4 dark:text-white">Projects</h2>
     <div class="grid gap-6 md:grid-cols-2">
-      <article class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border border-emerald-200 dark:border-emerald-700 md:col-span-2 transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
-          <h3 class="text-xl font-bold dark:text-white">DDS GDP Migration</h3>
-        </div>
-        <p class="dark:text-gray-200 mb-3">Migrated enterprise ETL workloads from a legacy Hadoop-based platform to a modern cloud data platform by converting Hive-based pipelines into Spark and Apache Iceberg jobs, while adapting schemas and DDLs for multi-country datasets.</p>
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Spark</span>
-          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Iceberg</span>
-          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Airflow</span>
-          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">SQL</span>
-        </div>
-      </article>
-
+      
       <article class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border border-emerald-200 dark:border-emerald-700 transform transition duration-300 hover:scale-105 hover:shadow-xl">
         <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
           <h3 class="text-xl font-bold dark:text-white">Food Demand Prediction</h3>
@@ -150,18 +138,6 @@
           <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Python</span>
           <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Pandas</span>
           <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Scikit-learn</span>
-        </div>
-      </article>
-
-      <article class="bg-white dark:bg-gray-800 p-5 shadow rounded-lg border border-emerald-200 dark:border-emerald-700 transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
-          <h3 class="text-xl font-bold dark:text-white">ETL Troubleshooting & Support</h3>
-        </div>
-        <p class="dark:text-gray-200 mb-3">Diagnosed Spark ETL job failures by analyzing logs, SQL issues, schema mismatches, and data quality problems to support stable execution in production and release cycles.</p>
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Root Cause Analysis</span>
-          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Spark Debugging</span>
-          <span class="bg-emerald-100 dark:bg-emerald-700 text-emerald-800 dark:text-white px-2 py-1 rounded-full text-xs">Data Quality</span>
         </div>
       </article>
     </div>
@@ -196,7 +172,7 @@
     <div class="mb-8">
       <p class="font-bold dark:text-white">Associate Software Engineer (Data Engineer) @ Tech Mahindra</p>
       <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">Apr 2025 – Present</p>
-      <p class="text-sm italic dark:text-gray-200 mb-3">Project: DDS GDP Migration | Client: Standard Chartered Bank</p>
+      <p class="text-sm italic dark:text-gray-200 mb-3">Banking Client</p>
       <ul class="list-disc pl-6 mt-2 dark:text-gray-200 space-y-2">
         <li>Migrate enterprise ETL workloads from a legacy Hadoop-based data platform to a modern cloud data platform, converting Hive-based pipelines into Spark and Apache Iceberg jobs, including schema and DDL changes across multiple country-specific datasets.</li>
         <li>Convert legacy batch job schedules into Apache Airflow DAGs as part of the orchestration migration.</li>

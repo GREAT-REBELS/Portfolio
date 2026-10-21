@@ -8,6 +8,7 @@ body {
     rgba(16, 185, 129, 0.04),
     rgba(15, 23, 42, 0.02)
   );
+  overflow-x: hidden;
 }
 
 #mainHeader {
@@ -16,6 +17,16 @@ body {
 
 section {
   animation: fadeInUp 0.7s ease-out;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-top: 6.5rem;
+  }
+
+  .text-3xl {
+    font-size: 1.6rem;
+  }
 }
 
 @keyframes fadeInUp {
